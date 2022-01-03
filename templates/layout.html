@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Hi, my name is Muhsin, i am a computer scientist / wannabe data scientist and this is my portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='bulma.min.css')}}">
+    <link rel='stylesheet' href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css')}}">
+    <title>Muhsin Hameed software Developer and Data Scientist</title>
+</head>
+
+<body class="has-background-info-light">
+    {%block content%}
+
+    {%endblock content%}
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Portfolio site </strong> designed in flask with bulma css by Muhsin. Feel free to reach out <a href="https://www.linkedin.com/in/muhsin-h/">@muhsin-h</a>.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

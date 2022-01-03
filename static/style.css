@@ -1,0 +1,53 @@
+body{
+    min-width: 600px;
+    background-color: #E6E6E6;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.column img {
+    border-radius: 10px;
+}
+
+.card:hover {
+    border-left: 7px solid black;
+    border-bottom: 5.5px solid black;
+}
+.is-multiline{
+    border-radius: 70px;
+}
+
+.hero {
+    min-width: 600px;
+    padding-left: 10px;
+    background: linear-gradient(145deg,#393939, #1d1d1d,#E6E6E6);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    /* background: url(/static/bk.gif); */
+    /* background-repeat: no-repeat;
+
+    background-size: 100%;
+    background-color: black; */
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 10%;
+    }
+    50% {
+        background-position: 100% 10%;
+    }
+    100% {
+        background-position: 0% 10%;
+    }
+}
+
+.fa {
+    color: white;
+    font-size: 45px;
+}
+/* 
+.welcome{
+    background: url(/static/welcometomarch.png);
+} */

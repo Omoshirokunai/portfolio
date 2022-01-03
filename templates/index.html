@@ -1,0 +1,215 @@
+{%extends "layout.html"%}
+
+{%block content%}
+<!-- <style>
+
+</style> -->
+<section class="hero is-medium">
+    <div class="hero-body">
+
+        <article class="media">
+            <figure class="media-left">
+                <p class="image is-124x124">
+                    <img src="{{url_for('static', filename='myimg.jpg')}}" alt="" style="border: 1px solid #E6E6E6;" width="294" height="389">
+                </p>
+            </figure>
+            <div class="media-content">
+                <div class="content">
+                    <p style="color: #E6E6E6; font-size:17px">
+                        <strong class="title" style="color: white;">MUHSIN HAMEED</strong>
+                        <br>
+                        A computer science graduate passionate about <i style="color:#E9D758">data</i> and what can be achieved with 
+                        good data especially in languages like <i style="color: #ace1e1;">Python</i>. 
+                        <br>I have experience working on <i style="color:#E9D758">web</i>,
+                        <i style="color:#ace1e1;"> data analysis, visualization</i> and <i style="color:#ace1e1"> presentation  </i> projects 
+                        as well as some personal research in machine learning and graphics design. <br>
+                        I am seeking a position in <b> research, analytics and consultation </b> fields 
+                        where I feel I can best contribute to progressing the vision of my team and employer.
+                    </p>
+                    <p>
+
+                    </p>
+                </div>
+                <nav class="level is-mobile">
+                    <div class="level-left">
+                        <a class="level-item" href="https://github.com/Omoshirokunai" aria-label="muh-github"target="_blank"  rel="noopener">
+                            <span class="icon is-medium"><i class="fa fa-github" aria-hidden="true"></i></span>
+                        </a>
+                        <a class="level-item" href="https://twitter.com/a_shadyghost"aria-label="muh-twitter"target="_blank"  rel="noopener">
+                            <span class="icon is-medium"><i class="fa fa-twitter"></i></span>
+                        </a>
+
+                        <a class="level-item" href="https://www.linkedin.com/in/muhsin-h/"aria-label="muh-linkedin" target="_blank"  rel="noopener">
+                            <span class="icon is-medium"><i class="fa fa-linkedin"></i></span>
+                        </a>
+                        <a class="level-item" href="mailto:normanbellenger@protonmail.com" aria-label="muh-mail"target="_blank"  rel="noopener">
+                            <span class="icon is-medium"><i class="fa fa-envelope"></i></span>
+                        </a>
+
+                        <a class="level-item" href="https://www.kaggle.com/shadyghost"aria-label="muh-kaggle" target="_blank" rel="noopener">
+                            <span class="icon is-medium"><i class="fa">k</i></span>
+                        </a>
+
+                    </div>
+                </nav>
+            </div>
+
+        </article>
+
+
+
+
+
+
+    </div>
+    </div>
+
+
+</section>
+
+<!-- projects section -->
+
+
+
+<section class="blog-posts" style="margin-top: 24px;">
+
+    <h1 class="title has-text-centered">Featured projects</h1>
+    
+    <div class="container">
+        <div class="columns">
+            <div class="column is-10 is-offset-1">
+                <div class="columns featured-post is-multiline">
+                    <div class="column is-12 post">
+
+                        <!-- ? featured project -->
+                        <article class="columns featured">
+                            <div class="column is-7 post-img ">
+                                <img src="{{url_for('static', filename=projects['wizemart']['image'])}}" alt="wizemart" width="641" height="416" >
+                            </div>
+                            <div class="column is-5 featured-content va">
+                                <div>
+                                    <!-- <h3 class="heading post-category">Project:</h3> -->
+                                    <h1 class="title post-title">{{projects['wizemart']['name'].capitalize()}} </h1>
+                                    <p class="post-excerpt">{{projects['wizemart']['about']}} 
+                                    </p>
+                                    <p>
+                                        Skills: <strong>{{', '.join(projects['wizemart']['tools'])}}</strong>
+                                    </p>
+
+                                    <br>
+                                    <a href="https://{{projects['wizemart']['link']}}" target="_blank" class="button" rel="noopener">Visit</a>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <hr>
+
+                <!--? middle 2 posts -->
+                <div class="columns is-multiline">
+                    <div class="column post is-6">
+                        <article class="columns is-multiline">
+                            <div class="column is-12 post-img">
+                                <img src="{{url_for('static', filename=projects['holmes']['image'])}}" 
+                                alt="Featured Image" style="max-height:120%" width="546" height="273" loading="lazy" >
+                            </div>
+                            <div class="column is-12 featured-content ">
+                                <!-- <h3 class="heading post-category">Project:</h3> -->
+                                    <h1 class="title post-title">{{projects['holmes']['name'].capitalize()}}</h1>
+                                    <p class="post-excerpt">{{projects['holmes']['about']}} 
+                                    </p>
+                                    <p>
+                                        Skills: <strong> {{', '.join(projects['holmes']['tools'])}}
+                                        </strong> </p>
+
+                                    <br>
+                                    <a href="https://{{projects['holmes']['link']}}" target="_blank" class="button"  rel="noopener">Visit</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="column post is-6">
+                        <article class="columns is-multiline">
+                            <div class="column is-12 post-img">
+                                <img
+                                src="{{url_for('static', filename=projects['viz1']['image'])}}" alt="Featured Image" width="546" height="273" loading="lazy">
+                            </div>
+                            <div class="column is-12 featured-content ">
+                                <!-- <h3 class="heading post-category">Project:</h3> -->
+                                <h1 class="title post-title">{{projects['viz1']['name'].capitalize()}}</h1>
+                                <p class="post-excerpt">{{projects['viz1']['about']}} 
+                                </p>
+                                <p>
+                                    Skills: <strong>{{', '.join(projects['viz1']['tools'])}}
+                                </strong></p>
+
+                                <br>
+                                <a href="https://{{projects['viz1']['link']}}" class="button" target="_blank"  rel="noopener">Visit</a>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <!-- ? last 3 posts -->
+                    <div class="column post is-4">
+                        <article class="columns is-multiline">
+                            <div class="column is-12 post-img">
+                                <img
+                                src="{{url_for('static', filename=projects['jumia-scrape']['image'])}}"  width="356" height="178" alt="Featured Image" loading="lazy" style="margin-top:65px;margin-bottom: 25px;">
+                            </div>
+                            <div class="column is-12 featured-content ">
+                                <!-- <h3 class="heading post-category">Project:</h3> -->
+                                <h1 class="title post-title">{{projects['jumia-scrape']['name'].capitalize()}}</h1>
+                                <p class="post-excerpt">{{projects['jumia-scrape']['about']}} 
+                                </p>
+                                <p>
+                                    Skills: <strong>{{', '.join(projects['jumia-scrape']['tools'])}}
+                                </strong></p>
+
+                                <br>
+                                <a href="https://{{projects['jumia-scrape']['link']}}" class="button" target="_blank"  rel="noopener">Visit</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="column post is-4">
+                        <article class="columns is-multiline">
+                            <div class="column is-12 post-img">
+                                <img src="{{url_for('static', filename=projects['graphics']['image'])}}" alt="Featured Image" width="356" height="178" loading="lazy">
+                            </div>
+                            <div class="column is-12 featured-content ">
+                                <!-- <h3 class="heading post-category">Project:</h3> -->
+                                <h1 class="title post-title">{{projects['graphics']['name'].capitalize()}}</h1>
+                                <p class="post-excerpt">{{projects['graphics']['about']}} 
+                                </p>
+                                <p>
+                                    Skills: <strong>{{', '.join(projects['graphics']['tools'])}}
+                                </strong></p>
+
+                                <br>
+                                <a href="/gallery" class="button"  rel="noopener">Visit</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="column post is-4">
+                        <article class="columns is-multiline">
+                            <div class="column is-12 post-img">
+                                <img src="{{url_for('static', filename=projects['727']['image'])}}" alt="Featured Image" width="356" height="179" loading="lazy" style="margin-top:15px;">
+                            </div>
+                            <div class="column is-12 featured-content ">
+                                <!-- <h3 class="heading post-category">Project:</h3> -->
+                                <h1 class="title post-title">{{projects['727']['name']}}</h1>
+                                <p class="post-excerpt">{{projects['727']['about']}} 
+                                </p>
+                                <p>
+                                    Skills: <strong>{{', '.join(projects['727']['tools'])}}
+                                </strong></p>
+
+                                <br>
+                                <a href="/gallery" class="button"  rel="noopener">Visit</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {%endblock content%}
