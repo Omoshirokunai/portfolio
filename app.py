@@ -63,6 +63,15 @@ def home():
 def gallery():
     return render_template('galley.html')
 
+@app.route("/resume")
+def resume():
+    return render_template('resume.html')
+
+@app.errorhandler(404)
+# inbuilt function which takes error as parameter
+def not_found(e):
+# defining function
+    return render_template("404.html")
 
 # ? favivon
 @app.route('/favicon.ico') 
