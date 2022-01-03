@@ -17,7 +17,7 @@ projects = {
             "link":"github.com/Omoshirokunai/holmes2",
             "about":"A collection of digital image forensics tools brought into an easy to use electron.js GUI",
             "image":"holmes2.png",
-            "tools":["Image procesing","Streamlit","Digital forensics", "Electron.js"]
+            "tools":["Image processing","Streamlit","Digital forensics", "Electron.js"]
         },
     "viz1":
         {
@@ -73,7 +73,7 @@ def not_found(e):
 # defining function
     return render_template("404.html")
 
-# ? favivon
+# ? favicon
 @app.route('/favicon.ico') 
 def favicon(): 
     return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
