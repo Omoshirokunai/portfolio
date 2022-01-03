@@ -48,7 +48,7 @@ projects = {
         {
             "name":"727 Softworks",
             "link":"",
-            "about":"I am hope to be the founder of a startup idea I've been working on recently which I've yet to make significant progress on.",
+            "about":"I am hope to launch a startup idea I've been working on recently, but I've yet to make significant progress on it so employment is currently the priority.",
             "image":"727.webp",
             "tools":["WebRtc","..(Work in progress)"]
         },
