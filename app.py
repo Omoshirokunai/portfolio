@@ -61,7 +61,7 @@ def home():
 
 @app.route("/gallery")
 def gallery():
-    return render_template('galley.html')
+    return render_template('gallery.html')
 
 @app.route("/resume")
 def resume():
